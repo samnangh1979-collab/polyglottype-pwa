@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PolyglotType</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1e88e5" />
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-512.png" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #ffffff;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe
+    src="https://ai.studio/apps/drive/1Y3e3eNAXxblNzJ8Ri4yrWB1reGbdRMHX?fullscreenApplet=true"
+    allow="fullscreen"
+  ></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
